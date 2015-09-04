@@ -1,5 +1,5 @@
 # RailsAdminRedactor
-RailsAdminRedactor is a plugin that adds the [Redactor](http://imperavi.com/redactor/) editor to [RailsAdmin](https://github.com/sferik/rails_admin).
+RailsAdminRedactor is a plugin that adds the [Redactor](http://imperavi.com/redactor/) wysiwyg editor to [RailsAdmin](https://github.com/sferik/rails_admin).
 
 ## Getting Started
 1. Add ```gem "rails_admin_redactor"``` to your Gemfile
