@@ -14,11 +14,11 @@ RailsAdmin.config do |config|
       field :content, :redactor do
         # Optional
         # The location of the redactor.js file. The default is...
-        js_location {ActionController::Base.helpers.asset_path('redactor.js') } # Optional, this is the default value
+        js_location {ActionController::Base.helpers.asset_path('redactor.js') }
         
         # Optional
         # The location of the redactor.css file. The default is...
-        css_location { ActionController::Base.helpers.asset_path('redactor.css') } # Optional, this is the default value
+        css_location { ActionController::Base.helpers.asset_path('redactor.css') }
         
         # Optional
         # The options to be passed to redactor when initializing the editor
