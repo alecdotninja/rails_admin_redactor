@@ -11,6 +11,8 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new('>= 0')
 
+  s.add_dependency 'rails_admin', '~> 0.6'
+
   s.files = [
       './lib/rails_admin_redactor.rb',
       './lib/rails_admin_redactor/redactor.rb',
