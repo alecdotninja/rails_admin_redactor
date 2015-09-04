@@ -1,2 +1,2 @@
-# rails-admin-redactor
-Adds the redactor edit to Rails Admin
+# rails_admin_redactor
+Adds the redactor editor to Rails Admin
