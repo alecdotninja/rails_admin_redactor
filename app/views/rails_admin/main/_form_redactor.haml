@@ -1,0 +1,32 @@
+= form.text_area field.method_name, { :'data-richtext' => 'redactor', :'data-options' => field.options.to_json, value: field.form_value }.merge(field.html_attributes)
+
+:javascript
+  (function() {
+    $(document).on('rails_admin.dom_ready', function() {
+      var $redactorTextareas = $('textarea[data-richtext=redactor]:not(.redactor-initialized)');
+
+      if($redactorTextareas.length > 0) {
+        var jsPath = (#{field.js_location.to_json});
+        var cssPath = (#{field.css_location.to_json});
+
+        if($('link[href="' + cssPath + '"]').length === 0) {
+          $('head').append('<link href="' + cssPath + '" rel="stylesheet" media="all" type="text/css">');
+        }
+
+        if($.fn.redactor) {
+          onRedactorReady();
+        }else{
+          $.getScript(jsPath, onRedactorReady);
+        }
+      }
+    });
+
+    var onRedactorReady = function() {
+      $('textarea[data-richtext=redactor]:not(.redactor-initialized)').each(function() {
+        var $redactorTextarea = $(this);
+        var options = $redactorTextarea.data('options');
+
+        $redactorTextarea.addClass('redactor-initialized').redactor(options);
+      });
+    };
+  })();
