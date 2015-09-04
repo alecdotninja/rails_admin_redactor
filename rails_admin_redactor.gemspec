@@ -5,10 +5,9 @@ Gem::Specification.new do |s|
   s.name    = 'rails_admin_redactor'
   s.version = RailsAdminRedactor::VERSION
   s.summary = 'Rails Admin Redactor'
-  s.description = 'Rails admin redactor'
-  s.author  = 'Agape Red'
-  s.email = 'alec.larsen@agapered.com'
-  s.date = Time.now.strftime '%Y-%m-%d'
+  s.description = s.summary
+  s.homepage = 'https://github.com/anarchocurious/rails_admin_redactor'
+  s.authors = ['anarchocurous', 'jenhomann']
 
   s.required_rubygems_version = Gem::Requirement.new('>= 0')
 
