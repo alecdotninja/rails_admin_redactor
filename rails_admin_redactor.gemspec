@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.summary = 'Rails Admin Redactor'
   s.description = s.summary
   s.homepage = 'https://github.com/anarchocurious/rails_admin_redactor'
-  s.authors = ['anarchocurous', 'jenhomann']
+  s.authors = ['anarchocurious', 'jenhomann']
 
   s.required_rubygems_version = Gem::Requirement.new('>= 0')
 
